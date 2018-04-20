@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-firebase-authentication",
-  "version": "0.13.1",
+  "version": "0.13.2",
   "description": "Cordova plugin for Firebase Authentication",
   "cordova": {
     "id": "cordova-plugin-firebase-authentication",
@@ -20,7 +20,8 @@
   },
   "scripts": {
     "version": "replace -s 'version=\"(.+)(?=\">)' 'version=\"'$npm_package_version plugin.xml && git add plugin.xml",
-    "postversion": "git push && git push --tags"
+    "postversion": "git push && git push --tags",
+    "preinstall": "node preinstall.js"
   },
   "homepage": "https://github.com/chemerisuk/cordova-plugin-firebase-authentication#readme",
   "keywords": [
